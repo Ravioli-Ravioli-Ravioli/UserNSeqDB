@@ -1,0 +1,41 @@
+extends layout
+
+block content
+	h3= title
+	form#form_add_seq(seqID="addseq", method="post", action="/addseq")
+		span Seq ID
+		span &nbsp;
+		input#input_seqid(type="text", placeholder="Sequence ID", name="seqID")
+		br
+		br
+		span Organism
+		span &nbsp;
+		input#input_organism(type="text", placeholder="Organism", name="organism")
+		br
+		br
+		span Seq Quality
+		span &nbsp;
+		input#input_seqqual(type="text", placeholder="Sequence Quality", name="seqQual")
+		br
+		br
+		span Owner or Uploader
+		span &nbsp;
+		input#input_owner(type="text", placeholder="Owner", name="owner")
+		br
+		br
+		span Upload Date
+		span &nbsp;
+		input#input_udate(type="text", placeholder="Upload Date", name="uDate")
+		br
+		br
+		span Last Modified Date
+		span &nbsp;
+		input#input_lmdate(type="text", placeholder="Last Modified Date", name="lmDate")
+		br
+		br
+		span Main Server
+		span &nbsp;
+		input#input_mainserver(type="text", placeholder="Main Server", name="mainServer")
+		br
+		br
+		button#submit_seq(type="submit") submit

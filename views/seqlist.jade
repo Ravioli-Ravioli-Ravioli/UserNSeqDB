@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h3.
+		Sequence List
+	ul
+		each seq, i in seqlist
+			li#seq_list_item
+				a(href="#") #{seq.seqID} #{seq.organism} #{seq.seqQual} #{seq.owner} #{seq.uDate} #{seq.lmDate} #{seq.mainServer} #{seq.rmtServers}
